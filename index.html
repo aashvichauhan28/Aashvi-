@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aashvi Chauhan | BTech CSE Student, Athlete & Software Builder</title>
+  <meta name="description" content="Official personal portfolio of Aashvi Chauhan — 1st Year BTech CSE Core student at JECRC University, National Karateka, District Swimmer, and Creator of AURA.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Background Ambient Glow Elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Top Announcement / Status Bar -->
+  <div class="status-ribbon">
+    <div class="container ribbon-content">
+      <span class="pulse-dot"></span>
+      <span>1st Year BTech CSE Core @ <strong>JECRC University</strong> &bull; Open for Student Hackathons & Collaborations</span>
+      <a href="#contact" class="ribbon-link">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header id="main-header" class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Aashvi Chauhan Portfolio Home">
+        <div class="monogram-badge">AC</div>
+        <div class="brand-info">
+          <span class="brand-name">Aashvi Chauhan</span>
+          <span class="brand-tag">BTech CSE &bull; Athlete</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#skills" class="nav-item"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#aura-project" class="nav-item badge-parent"><i class="fa-solid fa-spa"></i> AURA Project <span class="hot-badge">Featured</span></a></li>
+          <li><a href="#certificates" class="nav-item"><i class="fa-solid fa-award"></i> Certificates</a></li>
+          <li><a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action CTAs -->
+      <div class="header-actions">
+        <a href="resume.html" target="_blank" class="btn btn-secondary-sm" id="nav-view-resume">
+          <i class="fa-solid fa-file-invoice"></i>
+          <span>Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-primary-sm">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Let's Connect</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobile-drawer" class="mobile-drawer">
+      <div class="drawer-content">
+        <ul class="drawer-nav-links">
+          <li><a href="#home" class="drawer-item"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="drawer-item"><i class="fa-solid fa-user"></i> About Aashvi</a></li>
+          <li><a href="#skills" class="drawer-item"><i class="fa-solid fa-code"></i> Skills & Stack</a></li>
+          <li><a href="#aura-project" class="drawer-item"><i class="fa-solid fa-spa"></i> AURA Project</a></li>
+          <li><a href="#certificates" class="drawer-item"><i class="fa-solid fa-award"></i> Certificates & Honors</a></li>
+          <li><a href="#contact" class="drawer-item"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+        <div class="drawer-ctas">
+          <a href="resume.html" target="_blank" class="btn btn-secondary w-full">
+            <i class="fa-solid fa-file-arrow-down"></i> View / Download Resume
+          </a>
+          <a href="#contact" class="btn btn-primary w-full drawer-close-trigger">
+            <i class="fa-solid fa-phone"></i> Direct Contact
+          </a>
+        </div>
+        <div class="drawer-contact-info">
+          <p><i class="fa-solid fa-envelope"></i> theaashvi.chauhan@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 7976201178</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="badge-pill hero-pill">
+            <span class="badge-dot"></span>
+            <span>JECRC University &bull; BTech CSE Core '28</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering Code.<br>
+            <span class="gradient-text">Forged in Discipline.</span><br>
+            Building Tomorrow.
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong class="text-highlight">Aashvi Chauhan</strong> — a computer science undergraduate driven by relentless curiosity. By combining the mental toughness of <strong>national-level karate</strong> and <strong>district-level swimming</strong> with modern <strong>Python programming</strong> and <strong>AI-accelerated development</strong>, I engineer thoughtful digital experiences like the <em>AURA</em> wellness platform.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#aura-project" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-spa"></i>
+              <span>Explore AURA Project</span>
+            </a>
+            <a href="#about" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-compass"></i>
+              <span>My Athletic & Tech Journey</span>
+            </a>
+          </div>
+
+          <!-- Hero Highlights / Key Stats -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-card">
+              <div class="stat-icon karate-icon"><i class="fa-solid fa-hand-fist"></i></div>
+              <div class="stat-text">
+                <span class="stat-number">National</span>
+                <span class="stat-label">Karate Athlete</span>
+              </div>
+            </div>
+
+            <div class="hero-stat-card">
+              <div class="stat-icon swim-icon"><i class="fa-solid fa-person-swimming"></i></div>
+              <div class="stat-text">
+                <span class="stat-number">District</span>
+                <span class="stat-label">Swimmer</span>
+              </div>
+            </div>
+
+            <div class="hero-stat-card">
+              <div class="stat-icon code-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="stat-text">
+                <span class="stat-number">AI & Python</span>
+                <span class="stat-label">Rapid Prototyper</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Bento Card -->
+        <div class="hero-visual">
+          <div class="profile-card glass-panel">
+            <div class="card-glow-top"></div>
+            
+            <div class="avatar-wrapper">
+              <div class="avatar-ring">
+                <!-- High-styled Avatar Representation -->
+                <div class="avatar-inner">
+                  <div class="avatar-monogram">AC</div>
+                  <div class="avatar-sub">Aashvi Chauhan</div>
+                </div>
+              </div>
+              <div class="active-badge" title="Actively Learning & Building">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+            </div>
+
+            <div class="profile-meta text-center">
+              <h3 class="profile-name">Aashvi Chauhan</h3>
+              <p class="profile-role">First-Year BTech CSE Core Student</p>
+              <p class="profile-location"><i class="fa-solid fa-location-dot"></i> JECRC University, Jaipur</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Bento Chips -->
+            <div class="profile-chips">
+              <div class="chip chip-sports"><i class="fa-solid fa-medal"></i> National Karateka</div>
+              <div class="chip chip-swim"><i class="fa-solid fa-water"></i> District Swimmer</div>
+              <div class="chip chip-tech"><i class="fa-brands fa-python"></i> Python Programmer</div>
+              <div class="chip chip-ai"><i class="fa-solid fa-robot"></i> AI & Claude Power User</div>
+              <div class="chip chip-travel"><i class="fa-solid fa-plane"></i> Avid Traveler</div>
+            </div>
+
+            <div class="profile-quote-card">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Sports taught me that true mastery comes from showing up every day. I bring that exact intensity to code and AI."</p>
+            </div>
+
+            <div class="profile-footer-actions">
+              <a href="resume.html" target="_blank" class="btn btn-outline-sm w-full">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open ATS Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-pill"><i class="fa-solid fa-user-astronaut"></i> The Story Behind The Code</div>
+          <h2 class="section-title">Where Athletic Grit Meets <span class="gradient-text">Algorithmic Mindset</span></h2>
+          <p class="section-subtitle">
+            I am not just studying Computer Science; I am building mental endurance and technical breadth to craft meaningful software solutions that inspire and heal.
+          </p>
+        </div>
+
+        <div class="about-bento-grid">
+          <!-- Card 1: The Scholar & Engineer -->
+          <div class="bento-card glass-panel bento-engineer">
+            <div class="bento-icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>BTech CSE Core @ JECRC University</h3>
+            <p>
+              As a first-year undergraduate pursuing Computer Science & Engineering (Core) at JECRC University, I am immersing myself in fundamental computing principles: logic formulation, data structures, and computer organization.
+            </p>
+            <ul class="about-bullet-list">
+              <li><i class="fa-solid fa-check"></i> Foundation in algorithmic thinking and problem decomposition.</li>
+              <li><i class="fa-solid fa-check"></i> Actively experimenting with modern AI workflows to accelerate software development.</li>
+              <li><i class="fa-solid fa-check"></i> Building tangible, real-world portfolio projects right from Year 1.</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: The National Karateka -->
+          <div class="bento-card glass-panel bento-sports">
+            <div class="bento-icon-box karate-accent">
+              <i class="fa-solid fa-hand-fist"></i>
+            </div>
+            <div class="bento-badge-tag">National Level</div>
+            <h3>Martial Arts & Karate Champion</h3>
+            <p>
+              Competing on the national karate stage forged my work ethic. In kumite and kata, a split-second hesitation means defeat. It taught me unwavering focus, emotional composure under pressure, and the resilience to bounce back from any setback.
+            </p>
+            <div class="stat-pill-row">
+              <span class="stat-badge"><i class="fa-solid fa-award"></i> National Competitor</span>
+              <span class="stat-badge"><i class="fa-solid fa-shield-halved"></i> Unshakable Discipline</span>
+            </div>
+          </div>
+
+          <!-- Card 3: The Competitive Swimmer -->
+          <div class="bento-card glass-panel bento-swim">
+            <div class="bento-icon-box swim-accent">
+              <i class="fa-solid fa-person-swimming"></i>
+            </div>
+            <div class="bento-badge-tag">District Level</div>
+            <h3>Competitive Swimming Endurance</h3>
+            <p>
+              Swimming competitive laps at the district level instilled deep stamina and rhythm. Pushing through exhaustion in cold morning waters translates directly to persisting through tough debugging sessions and complex logic puzzles.
+            </p>
+            <div class="stat-pill-row">
+              <span class="stat-badge"><i class="fa-solid fa-stopwatch"></i> Pacing & Stamina</span>
+              <span class="stat-badge"><i class="fa-solid fa-trophy"></i> District Honors</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Passion for AI & Python -->
+          <div class="bento-card glass-panel bento-ai">
+            <div class="bento-icon-box ai-accent">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>AI Exploration & Python Learning</h3>
+            <p>
+              Python is my primary weapon of choice for computational problem solving. Coupled with Large Language Models like Claude, I rapidly build full-stack interfaces, design user flows, and automate complex workflows.
+            </p>
+            <div class="code-snippet-preview">
+              <code><span class="code-keyword">def</span> <span class="code-func">daily_growth</span>():<br>&nbsp;&nbsp;mindset = <span class="code-str">"Martial Arts Grit"</span><br>&nbsp;&nbsp;code = <span class="code-str">"Python + AI Prototyping"</span><br>&nbsp;&nbsp;<span class="code-keyword">return</span> mindset + code</code>
+            </div>
+          </div>
+
+          <!-- Card 5: World Exploration & Traveling -->
+          <div class="bento-card glass-panel bento-travel">
+            <div class="bento-icon-box travel-accent">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <h3>World Exploration & Traveling</h3>
+            <p>
+              Travelling across diverse regions expands my mental horizons. Discovering new cultures, architectures, and natural landscapes fuels my creativity, keeping my design intuition empathetic, human-centric, and vibrant.
+            </p>
+            <div class="travel-tags">
+              <span><i class="fa-solid fa-mountain-sun"></i> Mountain Trails</span>
+              <span><i class="fa-solid fa-umbrella-beach"></i> Coastal Escapes</span>
+              <span><i class="fa-solid fa-landmark"></i> Heritage Cities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-pill"><i class="fa-solid fa-layer-group"></i> Technical & Interpersonal Stack</div>
+          <h2 class="section-title">Capabilities Engineered for <span class="gradient-text">Impact</span></h2>
+          <p class="section-subtitle">A balanced fusion of programming fundamentals, modern generative AI tools, and athletic mental conditioning.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1: Programming & Web -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-brands fa-python"></i></div>
+              <div>
+                <h3>Programming & Web Core</h3>
+                <p>Foundational logic & software construction</p>
+              </div>
+            </div>
+
+            <div class="skill-bars-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python text-warning"></i> Python Programming</span>
+                  <span class="skill-level">Active Learning & Logic</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 82%;"></div>
+                </div>
+                <p class="skill-subtext">Data types, algorithms, modular scripts, logic formulation.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5 text-danger"></i> HTML5 & Modern CSS3</span>
+                  <span class="skill-level">Design & Responsive UI</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 88%;"></div>
+                </div>
+                <p class="skill-subtext">Semantic layouts, Flexbox/Grid, CSS animations, glassmorphism.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js text-warning"></i> JavaScript Fundamentals</span>
+                  <span class="skill-level">Interactive DOM</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 75%;"></div>
+                </div>
+                <p class="skill-subtext">DOM manipulation, Web Audio API, event handling, async flows.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2: AI & Accelerated Development -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div>
+                <h3>AI & Next-Gen Workflows</h3>
+                <p>Leveraging cutting-edge AI for rapid delivery</p>
+              </div>
+            </div>
+
+            <div class="skill-bars-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-sparkles text-accent"></i> Development with Claude</span>
+                  <span class="skill-level">High Proficiency</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 92%;"></div>
+                </div>
+                <p class="skill-subtext">Rapid prototyping, architecture ideation, code refactoring & styling.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-comments text-info"></i> Prompt Engineering</span>
+                  <span class="skill-level">Iterative Precision</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+                <p class="skill-subtext">Context framing, multi-step problem solving, structured outputs.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-diagram-project text-success"></i> UI/UX Conception</span>
+                  <span class="skill-level">Human-Centric</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+                <p class="skill-subtext">Accessible color psychology, serene digital experiences, interactive design.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3: Athletic & Executive Mindset -->
+          <div class="skill-category-card glass-panel">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-shield-heart"></i></div>
+              <div>
+                <h3>Athletic & Leadership Strengths</h3>
+                <p>Grit forged on mats and in racing lanes</p>
+              </div>
+            </div>
+
+            <div class="strengths-tags-container">
+              <div class="strength-card">
+                <i class="fa-solid fa-bullseye"></i>
+                <div>
+                  <h4>High-Pressure Composure</h4>
+                  <p>National karate tournament experience creates unshakeable clarity under deadline stress.</p>
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <i class="fa-solid fa-dumbbell"></i>
+                <div>
+                  <h4>Relentless Work Ethic</h4>
+                  <p>Years of continuous sports training build the discipline to master difficult programming topics.</p>
+                </div>
+              </div>
+
+              <div class="strength-card">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                  <h4>Team Synergy & Collaboration</h4>
+                  <p>Active university participant ready to contribute energy and drive to team hackathons.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT: AURA STRESS RELIEF SECTION -->
+    <section id="aura-project" class="project-spotlight-section">
+      <div class="container">
+        <div class="spotlight-banner glass-panel">
+          <div class="spotlight-header">
+            <div class="badge-pill aura-pill"><i class="fa-solid fa-spa"></i> Signature Project</div>
+            <h2 class="spotlight-title">AURA &mdash; The Stress-Relief Sanctuary</h2>
+            <p class="spotlight-tagline">
+              A holistic web haven thoughtfully engineered to combat academic and modern anxiety through tranquil meditation, immersive nature soundscapes, and science-backed manifestation rituals.
+            </p>
+          </div>
+
+          <div class="aura-architecture-grid">
+            <!-- Feature Column: Modules -->
+            <div class="aura-features-list">
+              <div class="aura-feature-item">
+                <div class="af-icon"><i class="fa-solid fa-om"></i></div>
+                <div class="af-content">
+                  <h4>Virtual Meditation Room</h4>
+                  <p>A minimalist sanctuary with ambient lighting, guided timer presets, and distraction-free mindfulness visualizers.</p>
+                </div>
+              </div>
+
+              <div class="aura-feature-item">
+                <div class="af-icon"><i class="fa-solid fa-cloud-rain"></i></div>
+                <div class="af-content">
+                  <h4>Immersive Nature Sounds</h4>
+                  <p>Layered auditory environments including gentle rainfall, mountain stream, and whispering forest breeze to reset cortisol levels.</p>
+                </div>
+              </div>
+
+              <div class="aura-feature-item">
+                <div class="af-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+                <div class="af-content">
+                  <h4>Manifesting & Gratitude Desk</h4>
+                  <p>Interactive journaling interface for daily positive self-talk, affirmations, and goal visualization exercises.</p>
+                </div>
+              </div>
+
+              <div class="aura-feature-item">
+                <div class="af-icon"><i class="fa-solid fa-robot"></i></div>
+                <div class="af-content">
+                  <h4>Crafted with Claude & Web Tech</h4>
+                  <p>Engineered by Aashvi leveraging Claude for prompt-driven architectural speed, responsive design, and peaceful aesthetics.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive In-Browser AURA Experience Widget -->
+            <div class="aura-interactive-widget glass-panel">
+              <div class="widget-header">
+                <span class="widget-dot"></span>
+                <span>Live In-Page AURA Interactive Teaser</span>
+              </div>
+
+              <div class="breathing-guide-container">
+                <div id="breathing-bubble" class="breathing-bubble">
+                  <div class="bubble-inner">
+                    <span id="breathing-status" class="breathing-status">Ready</span>
+                    <span id="breathing-timer" class="breathing-timer">Click Start</span>
+                  </div>
+                </div>
+                <p id="breathing-prompt" class="breathing-prompt">Experience AURA's 4-4-4 Box Breathing Technique</p>
+
+                <div class="breathing-controls">
+                  <button id="start-breath-btn" class="btn btn-primary-sm">
+                    <i class="fa-solid fa-play"></i> Start Breathing Exercise
+                  </button>
+                  <button id="stop-breath-btn" class="btn btn-outline-sm" style="display: none;">
+                    <i class="fa-solid fa-stop"></i> Pause
+                  </button>
+                </div>
+              </div>
+
+              <div class="sound-player-compact">
+                <div class="sound-info">
+                  <i class="fa-solid fa-headphones text-accent"></i>
+                  <div>
+                    <span class="sound-title">Soothing Nature Generator</span>
+                    <span class="sound-desc">Synthesized in real-time via Web Audio API</span>
+                  </div>
+                </div>
+                <div class="sound-controls">
+                  <button id="ambient-audio-toggle" class="btn btn-secondary-sm" aria-label="Play/Pause Ambient Nature Sound">
+                    <i class="fa-solid fa-volume-high" id="audio-btn-icon"></i>
+                    <span id="audio-btn-text">Play Calming Rain</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="aura-cta-box">
+                <a href="#contact" class="btn btn-primary w-full">
+                  <i class="fa-solid fa-comments"></i> Inquire About AURA Website
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES & HONORS SECTION -->
+    <section id="certificates" class="certificates-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-pill"><i class="fa-solid fa-certificate"></i> Verified Credentials & Honors</div>
+          <h2 class="section-title">Sports Accolades & <span class="gradient-text">Academic Milestones</span></h2>
+          <p class="section-subtitle">
+            A testament to continuous discipline, competitive drive, and technical upskilling. Preview and download official credential records.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="cert-filter-bar">
+          <button class="cert-filter-btn active" data-filter="all">All Credentials (4)</button>
+          <button class="cert-filter-btn" data-filter="sports">Sports & Athletics (2)</button>
+          <button class="cert-filter-btn" data-filter="tech">Tech & Engineering (2)</button>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div class="certificates-grid">
+          <!-- Cert 1: National Karate -->
+          <div class="cert-card glass-panel" data-category="sports">
+            <div class="cert-ribbon sports-ribbon">National Level</div>
+            <div class="cert-header">
+              <div class="cert-icon-wrap sports-badge">
+                <i class="fa-solid fa-hand-fist"></i>
+              </div>
+              <div class="cert-meta">
+                <span class="cert-org">National Karate Federation of India</span>
+                <span class="cert-date">National Tournament Record</span>
+              </div>
+            </div>
+            <h3 class="cert-title">National Karate Championship Participant & Medalist</h3>
+            <p class="cert-desc">
+              Awarded for outstanding demonstration of Kata precision, Kumite tactical agility, and representing the state at the prestigious National Karate Championship.
+            </p>
+            <div class="cert-tags">
+              <span>National Rank</span>
+              <span>Black Belt Spirit</span>
+              <span>Kumite & Kata</span>
+            </div>
+            <div class="cert-actions">
+              <button class="btn btn-secondary-sm view-cert-btn" data-cert="karate">
+                <i class="fa-solid fa-eye"></i> Preview
+              </button>
+              <button class="btn btn-primary-sm download-cert-btn" data-cert="karate">
+                <i class="fa-solid fa-download"></i> Download Record
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 2: District Swimming -->
+          <div class="cert-card glass-panel" data-category="sports">
+            <div class="cert-ribbon swim-ribbon">District Level</div>
+            <div class="cert-header">
+              <div class="cert-icon-wrap swim-badge">
+                <i class="fa-solid fa-person-swimming"></i>
+              </div>
+              <div class="cert-meta">
+                <span class="cert-org">District Aquatics & Swimming Association</span>
+                <span class="cert-date">District Championship Meet</span>
+              </div>
+            </div>
+            <h3 class="cert-title">District Swimming Championship Podium Finisher</h3>
+            <p class="cert-desc">
+              Recognized for stellar performance in freestyle and medley sprint events, exemplifying superior stroke technique, cardiovascular endurance, and athletic focus.
+            </p>
+            <div class="cert-tags">
+              <span>District Meet</span>
+              <span>Sprint & Endurance</span>
+              <span>Podium Placement</span>
+            </div>
+            <div class="cert-actions">
+              <button class="btn btn-secondary-sm view-cert-btn" data-cert="swimming">
+                <i class="fa-solid fa-eye"></i> Preview
+              </button>
+              <button class="btn btn-primary-sm download-cert-btn" data-cert="swimming">
+                <i class="fa-solid fa-download"></i> Download Record
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 3: Python Programming -->
+          <div class="cert-card glass-panel" data-category="tech">
+            <div class="cert-ribbon tech-ribbon">Programming</div>
+            <div class="cert-header">
+              <div class="cert-icon-wrap tech-badge">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="cert-meta">
+                <span class="cert-org">JECRC University & Tech Academy</span>
+                <span class="cert-date">Academic Year 2024–2025</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Python Programming & Algorithmic Foundations</h3>
+            <p class="cert-desc">
+              Demonstrated mastery in core Python syntax, control structures, object-oriented concepts, algorithm design, and computational problem solving.
+            </p>
+            <div class="cert-tags">
+              <span>Python 3.x</span>
+              <span>Data Structures</span>
+              <span>Algorithmic Logic</span>
+            </div>
+            <div class="cert-actions">
+              <button class="btn btn-secondary-sm view-cert-btn" data-cert="python">
+                <i class="fa-solid fa-eye"></i> Preview
+              </button>
+              <button class="btn btn-primary-sm download-cert-btn" data-cert="python">
+                <i class="fa-solid fa-download"></i> Download Record
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 4: AI & Web Development with Claude -->
+          <div class="cert-card glass-panel" data-category="tech">
+            <div class="cert-ribbon ai-ribbon">AI Engineering</div>
+            <div class="cert-header">
+              <div class="cert-icon-wrap ai-badge">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="cert-meta">
+                <span class="cert-org">Modern AI Web Development Practicum</span>
+                <span class="cert-date">Rapid Prototyping Workshop</span>
+              </div>
+            </div>
+            <h3 class="cert-title">Rapid Web Engineering with Claude & Modern Tooling</h3>
+            <p class="cert-desc">
+              Certified achievement in building modern, responsive, user-centered web applications leveraging Claude AI for rapid component design, UI architecture, and agile coding.
+            </p>
+            <div class="cert-tags">
+              <span>Claude Workflows</span>
+              <span>Web UX/UI</span>
+              <span>AURA Platform Lead</span>
+            </div>
+            <div class="cert-actions">
+              <button class="btn btn-secondary-sm view-cert-btn" data-cert="ai-web">
+                <i class="fa-solid fa-eye"></i> Preview
+              </button>
+              <button class="btn btn-primary-sm download-cert-btn" data-cert="ai-web">
+                <i class="fa-solid fa-download"></i> Download Record
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SHOWCASE SECTION -->
+    <section id="resume-section" class="resume-section">
+      <div class="container">
+        <div class="resume-banner glass-panel">
+          <div class="resume-grid">
+            <div class="resume-info">
+              <div class="badge-pill"><i class="fa-solid fa-id-badge"></i> Curriculum Vitae</div>
+              <h2>Ready to Elevate Your Team or Hackathon Squad?</h2>
+              <p>
+                Download my comprehensive, ATS-formatted resume detailing my academic credentials at <strong>JECRC University</strong>, sports honors, Python skillset, and practical project builds.
+              </p>
+              
+              <div class="resume-feature-points">
+                <div class="point-item"><i class="fa-solid fa-circle-check"></i> JECRC University BTech CSE Core (First Year)</div>
+                <div class="point-item"><i class="fa-solid fa-circle-check"></i> National Karate & District Swimming Track Record</div>
+                <div class="point-item"><i class="fa-solid fa-circle-check"></i> AURA Stress-Relief Project Architecture & Python Skills</div>
+                <div class="point-item"><i class="fa-solid fa-circle-check"></i> Contact Details: Phone, Email & Location verified</div>
+              </div>
+
+              <div class="resume-cta-group">
+                <a href="resume.html" target="_blank" class="btn btn-primary btn-lg">
+                  <i class="fa-solid fa-file-pdf"></i> Download / Print Resume (PDF)
+                </a>
+                <button id="quick-preview-resume-btn" class="btn btn-secondary btn-lg">
+                  <i class="fa-solid fa-eye"></i> Quick In-Page Preview
+                </button>
+              </div>
+            </div>
+
+            <!-- Visual Resume Snapshot Card -->
+            <div class="resume-preview-card">
+              <div class="mockup-header">
+                <div class="mockup-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="mockup-title">Aashvi_Chauhan_Resume.pdf</span>
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-hero">
+                  <h4>AASHVI CHAUHAN</h4>
+                  <p class="mockup-subtitle">BTech CSE Core &bull; JECRC University &bull; National Athlete</p>
+                </div>
+                <div class="mockup-row">
+                  <span class="mockup-badge">Python</span>
+                  <span class="mockup-badge">Claude AI</span>
+                  <span class="mockup-badge">Web Dev</span>
+                  <span class="mockup-badge">National Karate</span>
+                </div>
+                <div class="mockup-line-group">
+                  <div class="mockup-line w-90"></div>
+                  <div class="mockup-line w-75"></div>
+                  <div class="mockup-line w-85"></div>
+                  <div class="mockup-line w-60"></div>
+                </div>
+                <div class="mockup-highlight-box">
+                  <strong>Featured Project: AURA</strong>
+                  <p>Stress-relief web sanctuary with meditation room, ambient nature audio & manifestation desk.</p>
+                </div>
+                <a href="resume.html" target="_blank" class="mockup-download-btn">
+                  <i class="fa-solid fa-arrow-down-to-bracket"></i> Click to Open Full ATS Version
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-pill"><i class="fa-solid fa-paper-plane"></i> Let's Start a Conversation</div>
+          <h2 class="section-title">Get In Touch With <span class="gradient-text">Aashvi</span></h2>
+          <p class="section-subtitle">
+            Whether you want to discuss student collaborations, tech ideas, sports training discipline, or just say hello — my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Details Column -->
+          <div class="contact-details-col">
+            <!-- Card: Phone -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon-bubble">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Phone & WhatsApp</span>
+                <a href="tel:+917976201178" class="contact-value" id="phone-link">+91 7976201178</a>
+                <span class="contact-hint">Available for calls & WhatsApp</span>
+              </div>
+              <div class="contact-action-btn-group">
+                <button class="btn btn-secondary-sm copy-btn" data-copy="7976201178" title="Copy phone number">
+                  <i class="fa-solid fa-copy"></i> Copy
+                </button>
+                <a href="tel:+917976201178" class="btn btn-primary-sm" title="Call directly">
+                  <i class="fa-solid fa-phone"></i> Call
+                </a>
+              </div>
+            </div>
+
+            <!-- Card: Email -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon-bubble email-bubble">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Personal Email</span>
+                <a href="mailto:theaashvi.chauhan@gmail.com" class="contact-value" id="email-link">theaashvi.chauhan@gmail.com</a>
+                <span class="contact-hint">Fastest response time</span>
+              </div>
+              <div class="contact-action-btn-group">
+                <button class="btn btn-secondary-sm copy-btn" data-copy="theaashvi.chauhan@gmail.com" title="Copy email address">
+                  <i class="fa-solid fa-copy"></i> Copy
+                </button>
+                <a href="mailto:theaashvi.chauhan@gmail.com" class="btn btn-primary-sm" title="Open mail client">
+                  <i class="fa-solid fa-paper-plane"></i> Mail
+                </a>
+              </div>
+            </div>
+
+            <!-- Card: Academic Location -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon-bubble location-bubble">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Current Academic Base</span>
+                <span class="contact-value-static">JECRC University</span>
+                <span class="contact-hint">Plot No. IS-2036 to 2039, Ramchandrapura, Sitapura Industrial Area Extn, Vidhani, Jaipur, Rajasthan 303905</span>
+              </div>
+            </div>
+
+            <!-- Social Quick Links -->
+            <div class="social-links-panel glass-panel">
+              <h4>Connect Across the Web</h4>
+              <div class="social-icon-row">
+                <a href="mailto:theaashvi.chauhan@gmail.com" class="social-btn" title="Email Aashvi">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="tel:+917976201178" class="social-btn" title="Call or WhatsApp">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col glass-panel">
+            <div class="form-header">
+              <h3>Send a Message Directly</h3>
+              <p>Leave a note and I will get back to you promptly.</p>
+            </div>
+
+            <form id="portfolio-contact-form" class="portfolio-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Full Name <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input type="text" id="form-name" name="name" placeholder="e.g. Alex Morgan" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Your Email Address <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-envelope input-icon"></i>
+                    <input type="email" id="form-email" name="email" placeholder="e.g. alex@example.com" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="form-subject" name="subject" placeholder="Project Collaboration, Hackathon, or Greeting">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Your Message <span class="required">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <textarea id="form-message" name="message" rows="5" placeholder="Hi Aashvi, I saw your AURA project and sports background..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-full submit-btn" id="form-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message to Aashvi</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="monogram-badge">AC</div>
+        <div>
+          <h4>Aashvi Chauhan</h4>
+          <p>BTech CSE Core Student &bull; Athlete &bull; Software Builder</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#aura-project">AURA</a>
+        <a href="#certificates">Certificates</a>
+        <a href="resume.html" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Aashvi Chauhan. Engineered with precision, discipline, and purpose.</p>
+        <a href="#home" class="back-to-top" aria-label="Scroll back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CERTIFICATE & RESUME PREVIEW MODAL -->
+  <div id="certificate-modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-body" id="modal-content">
+        <!-- Dynamically rendered certificate or resume markup -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
