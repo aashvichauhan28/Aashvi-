@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aashvi Chauhan — Curriculum Vitae / Resume</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #1e1b4b;
+      --accent: #4f46e5;
+      --accent-light: #818cf8;
+      --text-dark: #0f172a;
+      --text-gray: #475569;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --sports-red: #e11d48;
+      --swim-blue: #0284c7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f172a;
+      color: var(--text-dark);
+      line-height: 1.55;
+      padding: 40px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Floating Action Bar */
+    .action-bar {
+      position: fixed;
+      bottom: 24px;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(12px);
+      padding: 10px 20px;
+      border-radius: 999px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      gap: 12px;
+      z-index: 1000;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .btn-print {
+      background: #4f46e5;
+      color: #fff;
+    }
+
+    .btn-print:hover {
+      background: #4338ca;
+      transform: translateY(-1px);
+    }
+
+    .btn-back {
+      background: rgba(255, 255, 255, 0.1);
+      color: #f8fafc;
+    }
+
+    .btn-back:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Resume Paper Page */
+    .resume-page {
+      background: var(--white);
+      width: 100%;
+      max-width: 850px;
+      padding: 48px 56px;
+      border-radius: 8px;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Header */
+    .resume-header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+    }
+
+    .title-tagline {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 24px;
+      font-size: 0.88rem;
+      color: var(--text-gray);
+      margin-top: 14px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .contact-item a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-item a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Section Component */
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .section-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-heading i {
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+
+    /* Professional Summary */
+    .summary-text {
+      font-size: 0.92rem;
+      color: var(--text-gray);
+      line-height: 1.65;
+    }
+
+    /* Education Item */
+    .education-item, .project-item, .achievement-item {
+      margin-bottom: 14px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .item-institution {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .item-date {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .item-location {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .bullet-list {
+      padding-left: 18px;
+      margin-top: 6px;
+      font-size: 0.88rem;
+      color: var(--text-gray);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .bullet-list li {
+      line-height: 1.55;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    .skills-table td {
+      padding: 6px 0;
+      vertical-align: top;
+    }
+
+    .skills-category {
+      font-weight: 700;
+      color: var(--text-dark);
+      width: 28%;
+    }
+
+    .skills-list {
+      color: var(--text-gray);
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-left: 6px;
+    }
+
+    .badge-karate { background: #ffe4e6; color: var(--sports-red); }
+    .badge-swim { background: #e0f2fe; color: var(--swim-blue); }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .resume-page {
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Print Controls -->
+  <div class="action-bar">
+    <button class="btn btn-print" onclick="window.print()">
+      <i class="fa-solid fa-print"></i> Print to PDF / Paper
+    </button>
+    <a href="index.html" class="btn btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+  </div>
+
+  <!-- Printable Resume Page -->
+  <main class="resume-page">
+    <header class="resume-header">
+      <div class="header-top">
+        <div>
+          <h1 class="name">AASHVI CHAUHAN</h1>
+          <p class="title-tagline">BTech Computer Science & Engineering (Core) &bull; National Athlete &bull; Software Builder</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+917976201178">+91 7976201178</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:theaashvi.chauhan@gmail.com">theaashvi.chauhan@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>JECRC University, Jaipur, Rajasthan</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-globe"></i>
+          <span>Portfolio: index.html</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-heading"><i class="fa-solid fa-compass"></i> Profile Summary</h2>
+      <p class="summary-text">
+        Driven and disciplined First-Year BTech Computer Science & Engineering (Core) undergraduate at JECRC University with a distinguished competitive sports background in <strong>National-Level Karate</strong> and <strong>District-Level Swimming</strong>. Combines extreme mental composure, relentless work ethic, and athletic endurance with foundational <strong>Python programming</strong> and rapid <strong>AI-assisted software development using Claude</strong>. Passionate creator of the <strong>AURA</strong> stress-relief sanctuary and enthusiastic about student hackathons, software engineering, and global exploration.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      <div class="education-item">
+        <div class="item-header">
+          <span class="item-title">Bachelor of Technology (BTech) in Computer Science & Engineering (Core)</span>
+          <span class="item-date">2024 &ndash; 2028 (Year 1)</span>
+        </div>
+        <div class="item-header">
+          <span class="item-institution">JECRC University</span>
+          <span class="item-location">Jaipur, Rajasthan</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Core Curriculum: Computational Problem Solving, Python Programming, Logic Design, Object-Oriented Concepts.</li>
+          <li>Active participant in student technical societies, hackathons, and software prototyping initiatives.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical & Athletic Skills -->
+    <section class="section">
+      <h2 class="section-heading"><i class="fa-solid fa-code"></i> Skills & Core Competencies</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-category">Programming & Web:</td>
+          <td class="skills-list">Python (Core, Logic, Data Structures), HTML5, Modern CSS3, JavaScript (DOM, Web Audio API), Responsive UI Design.</td>
+        </tr>
+        <tr>
+          <td class="skills-category">AI & Modern Tooling:</td>
+          <td class="skills-list">AI-Assisted Web Engineering with Claude, Prompt Engineering, Rapid Software Prototyping, Git & GitHub.</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Athletic Mindset:</td>
+          <td class="skills-list">Crisis Composure, High-Pressure Execution, Unwavering Discipline, Long-Sprint Stamina, Team Leadership.</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Interests & Hobbies:</td>
+          <td class="skills-list">Competitive Martial Arts, Swimming, Exploring World Cultures & Travel, Mindfulness & Wellness Tech.</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Key Featured Projects -->
+    <section class="section">
+      <h2 class="section-heading"><i class="fa-solid fa-laptop-code"></i> Featured Technical Projects</h2>
+      <div class="project-item">
+        <div class="item-header">
+          <span class="item-title">AURA &mdash; The Stress-Relief & Mindfulness Sanctuary</span>
+          <span class="item-date">2024 &ndash; Present</span>
+        </div>
+        <div class="item-header">
+          <span class="item-institution">Lead Creator & Full-Stack Prototyper</span>
+          <span class="item-location">Python &bull; Claude AI &bull; HTML5/CSS3 &bull; Web Audio API</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Engineered a holistic mental wellness digital sanctuary to alleviate academic stress and sensory overload.</li>
+          <li>Designed an interactive <strong>Virtual Meditation Room</strong> with custom focus timers and guided ambient atmosphere.</li>
+          <li>Implemented dynamic <strong>Nature Sounds</strong> synthesized in-browser (gentle rain, forest streams, ocean waves) to facilitate focus.</li>
+          <li>Constructed a <strong>Manifestation & Gratitude Desk</strong> and interactive 4-4-4 box breathing visualizer.</li>
+          <li>Accelerated component architecture and responsive design through prompt-driven workflows with Claude.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Athletic Accolades & Leadership -->
+    <section class="section">
+      <h2 class="section-heading"><i class="fa-solid fa-trophy"></i> Honors, Sports Accolades & Credentials</h2>
+      
+      <div class="achievement-item">
+        <div class="item-header">
+          <span class="item-title">National Karate Championship Participant & Medalist <span class="badge badge-karate">National</span></span>
+          <span class="item-date">2023 &ndash; 2024</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Competed at the All-India National level in Kumite and Kata, demonstrating exceptional martial discipline, lightning-fast reflexes, and composure under extreme competitive pressure.</li>
+        </ul>
+      </div>
+
+      <div class="achievement-item">
+        <div class="item-header">
+          <span class="item-title">District Swimming Championship Podium Finisher <span class="badge badge-swim">District</span></span>
+          <span class="item-date">2023</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Secured podium finishes in competitive freestyle and medley races; built exceptional cardiovascular stamina and mental endurance that directly powers long software debugging cycles.</li>
+        </ul>
+      </div>
+
+      <div class="achievement-item">
+        <div class="item-header">
+          <span class="item-title">Python Programming & Algorithmic Logic Certificate</span>
+          <span class="item-date">2024</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Certified excellence in Python foundations, modular code architecture, and algorithm design at JECRC University.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
